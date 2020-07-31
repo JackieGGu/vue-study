@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Vue App</title>
+  <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app-02">
+  <span v-bind:title="message">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+</div>
+<script>
+  let app02 = new Vue({
+    el: "#app-02",
+    data: {
+      message: "页面加载于：" + new Date().toLocaleString()
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Vue App</title>
+  <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app-03">
+  <p v-if="visible">
+    现在你看到我了
+  </p>
+</div>
+<script>
+  let app03 = new Vue({
+    el: "#app-03",
+    data: {
+      visible: true
+    }
+  })
+</script>
+</body>
+</html>

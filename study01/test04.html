@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Vue App</title>
+  <script src="../vue.js"></script>
+</head>
+<body>
+<div id="app-04">
+  <ol>
+    <li v-for="item in items">
+      {{item.text}}
+    </li>
+  </ol>
+</div>
+<script>
+  let app04 = new Vue({
+    el: "#app-04",
+    data: {
+      items: [
+        { text: '学习 JavaScript' },
+        { text: '学习 Vue' },
+        { text: '整个牛项目' }
+      ]
+    }
+  })
+</script>
+</body>
+</html>
